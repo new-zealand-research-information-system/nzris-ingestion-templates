@@ -7,7 +7,7 @@ The grants.csv file is used to collect and organise key information about grants
 **Column 1. - "id"**  
 **Column 2. -	"type"**  
 **Column 3.	- "category"**  
-**Column 4.	- "c-protected"**  							
+**Column 4.	- "c-protected"**  
 **Column 5.	- "title"**  
 **Column 6. - "start-date"**  
 **Column 7.	- "end-date"**  
