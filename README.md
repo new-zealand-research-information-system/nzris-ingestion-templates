@@ -9,7 +9,7 @@ The NZRIS data ingestion process is designed to ensure the accurate and consiste
  •	[Provider ID_Dataset #]_publications.csv  
  •	[Provider ID_Dataset #]_collaborating-organisations.csv    
 
-**NOTE: Not all files are required for every submission to NZRIS.**  Although multiple *.csv files are available, the required files depend on the role of the organisation and the type of information being submitted.
+**NOTE:** <ins>Not all files are required for every submission to NZRIS.</ins>  Although multiple *.csv files are available, the required files depend on the role of the organisation and the type of information being submitted.
 Ingestion templates for capturing organisations **not** listed in the [Research Organisation Registry - ROR](https://ror.org/) and Indirectly Associated Individuals are available in NZRIS; however, their use is expected to be infrequent and generally limited to situations where additional detail is required.  
 
 •	[Provider ID_Dataset #]_persons.csv  
