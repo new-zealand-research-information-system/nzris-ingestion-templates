@@ -1,13 +1,14 @@
 # Overview of Ingestion Process  
 
 The NZRIS data ingestion process is designed to ensure the accurate and consistent integration of research-related data from providers into the NZRIS system. Data providers are required to prepare and format their data into a series of structured CSV files, each corresponding to a specific data domain. These include files containing information on users, grants and contracts, funds and funding rounds, publications, and relationships between categories. The submission process to ingest data into NZRIS requires the creation of multiple *.csv (comma separated value) files. These are:  
-  
- •	[Provider ID_Dataset #]_grants.csv  
- •	[Provider ID_Dataset #]_equipment.csv  
- •	[Provider ID_Dataset #]_links.csv  
- •	[Provider ID_Dataset #]_users.csv  
- •	[Provider ID_Dataset #]_publications.csv  
- •	[Provider ID_Dataset #]_collaborating-organisations.csv    
+
+* [[Provider ID_Dataset #]_grants.csv](#provider-id_dataset-_grantscsv)
+* [[Provider ID_Dataset #]_equipment.csv](#provider-id_dataset-_equipmentcsv)
+* [[Provider ID_Dataset #]_links.csv](#provider-id_dataset-_linkscsv)
+* [[Provider ID_Dataset #]_users.csv](#provider-id_dataset-_userscsv)
+* [[Provider ID_Dataset #]_publications.csv](#provider-id_dataset-_publicationscsv)
+* [[Provider ID_Dataset #]_collaborating-organisations.csv](#provider-id_dataset-_collaborating-organisationscsv)
+
 
 **NOTE:** <ins>Not all files are required for every submission to NZRIS.</ins>  Although multiple *.csv files are available, the required files depend on the role of the organisation and the type of information being submitted.
 Ingestion templates for capturing organisations **not** listed in the [Research Organisation Registry - ROR](https://ror.org/) and Indirectly Associated Individuals are available in NZRIS; however, their use is expected to be infrequent and generally limited to situations where additional detail is required.  
@@ -24,8 +25,10 @@ As noted above, data is supplied across multiple .csv files, each corresponding 
 Detailed guidance on the required structure for each ingest template is provided in the [Data Specification and Data Dictionary](https://github.com/new-zealand-research-information-system/nzris-data-specifications/blob/master/Data%20Specification%20and%20Data%20Dictionary.pdf), including mandatory columns by data type, the specific details needed within each column, and links to comprehensive field-level information.  
 
 To ensure successful ingestion into the NZRIS system, data providers must structure each .csv file using the exact column names and order specified in the following lists. The column headers in your file must match the field names provided – both in spelling and sequence – without modification. This consistency is critical for automated processing and validation. Where applicable, field-level notes and mapping references should be reviewed to confirm correct alignment with source data. This approach supports consistent formatting and ensures compatibility with NZRIS processing requirements.  
-  
-# **[Provider ID_Dataset #]_grants.csv**
+
+## Ingestion format
+
+### [Provider ID_Dataset #]_grants.csv
 
 The grants.csv file is used to collect and organise key information about grants, contracts, and payments. It captures details such as titles and descriptions, financial values, and important dates including award, start, and end dates.  All columns are required.
 
@@ -56,7 +59,7 @@ The grants.csv file is used to collect and organise key information about grants
 **Column 25.	- "constraints"**  
 **Column 26.	- "c-payment-reference"**  
   
-# [Provider ID_Dataset #]_equipment.csv
+### [Provider ID_Dataset #]_equipment.csv
 The equipment.csv template is used to gather key information about the ***funds and funding rounds*** associated with research investments and grants.  All columns are required.  
 
 **Column 1. - "id"**\
@@ -72,7 +75,7 @@ The equipment.csv template is used to gather key information about the ***funds 
 **Column 11. - "c-allocation-method"**\
 **Column 12. - "c-vote"**  
   
-# [Provider ID_Dataset #]_links.csv  
+### [Provider ID_Dataset #]_links.csv  
 The links.csv template is used to record relationships between different categories and record types within the metadata system.  All columns are required.  
 
 **Column 1. - "id-1"**\
@@ -84,7 +87,7 @@ The links.csv template is used to record relationships between different categor
 **Column 7. - "source-2"**\
 **Column 8. - "privacy-level"**  	
    
-# [Provider ID_Dataset #]_users.csv  
+### [Provider ID_Dataset #]_users.csv  
 The users.csv template is used to collect information about individuals who are directly associated with research funding, such as grant recipients, collaborators, and other key contributors.  Column headings must conform to the list below. All columns are required.    
 #### NOTE - unlike other ingest templates the column headings for Users require square brackets and initial caps.  
   
@@ -105,7 +108,7 @@ The users.csv template is used to collect information about individuals who are 
 **Column 15. - "Organisation[Generic03]"**\
 **Column 16. - "JobTile[Generic04]"**  
 
-# [Provider ID_Dataset #]_publications.csv  
+### [Provider ID_Dataset #]_publications.csv  
 The publications.csv template is used to capture information about published research outputs that result from grant funding. All columns are required.  
 
 **Column 1. - "id"**\
@@ -147,7 +150,7 @@ The publications.csv template is used to capture information about published res
 **Column 37. - "c-protected"**\
 **Column 38. - "c-funding-source-reference"**  				
 
-# [Provider ID_Dataset #]_collaborating-organisations.csv  
+### [Provider ID_Dataset #]_collaborating-organisations.csv  
 The collaborating-organisations.csv template is used to capture information about collaborating organisations that are directly involved in funded research activities. All columns are required.  
 #### When making amendments to the list of collaborating organisations for a specified grant, the entire updated list must be provided — not just the changes. This is because each time amended data is received, the existing data is completely overwritten.  
 
@@ -165,7 +168,7 @@ The collaborating-organisations.csv template is used to capture information abou
 **Column 12. - "ror-id"**\
 **Column 13. - "nzbn-id"**  
 
-# [Provider ID_Dataset #]_persons.csv  
+### [Provider ID_Dataset #]_persons.csv  
 The persons.csv template is used to capture information about individuals who are indirectly associated with research funding, such as editors and co-authors. All columns are required.  
 #### When making amendments to the list of indirectly associated individuals for a specified grant or publication, the entire updated list must be provided — not just the changes. This is because each time amended data is received, the existing data is completely overwritten.  
 
@@ -183,7 +186,7 @@ The persons.csv template is used to capture information about individuals who ar
 **Column 12. - "country"**\
 **Column 13. - "zip-code"**  
 
-# [Provider ID_Dataset #]_organisations.csv  
+### [Provider ID_Dataset #]_organisations.csv  
 Organisations recorded by the Research Organisation Registry [ROR](https://ror.org/) - are automatically included in the NZRIS database.  For other organisations use this template.  All columns are required.  
 
 **Column 1. - "id"**\
@@ -205,3 +208,39 @@ Organisations recorded by the Research Organisation Registry [ROR](https://ror.o
 **Column 17. - "succeeded-by-organisation-identifiers"**\
 **Column 18. - "related-organisation-identifiers"**  
 
+
+## Common organisations
+
+### Organisation Identifiers for Distributing and Recipient Organisations in _grants.csv Ingestion Template  
+The fields "funder" and "c-recipient-organisation" in the _grants.csv template require specific formatting of organisation detail to ensure correct record linkage.  Detailed information is provided in the Data Specification but a selection of these is provided below:  
+
+#### University / Education Provider / Wānanga  
+**Auckland University of Technology** - `Auckland University of Technology|ror-id:https://ror.org/01zvqw119`  
+**Lincoln University** - `Lincoln University|ror-id:https://ror.org/04ps1r162`\
+**Massey University** - `Massey University|ror-id:https://ror.org/052czxv31`\
+**Te Wānanga o Aotearoa** - `Te Wānanga o Aotearoa|ror-id:https://ror.org/02vcyrg44`\
+**University of Auckland** - `University of Auckland|ror-id:https://ror.org/03b94tp07`\
+**Univerity of Caterbury** - `University of Canterbury|ror-id:https://ror.org/03y7q9t39`\
+**University of Otago** - `University of Otago|ror-id:https://ror.org/01jmxt844`\
+**University of Waikato** - `University of Waikato|ror-id:https://ror.org/013fsnh78`\
+**Victoria University of Wellington** - `Victoria University of Wellington|ror-id:https://ror.org/0040r6f76`  
+
+#### Crown Research Institute (CRI) / Public Research Organisation (PRO)  
+**AgResesarch** - `AgResearch|ror-id:https://ror.org/0124gwh94`\
+**Cawthron Institute** - `Cawthron Institute|ror-id:https://ror.org/03sffqe64`\
+**ESR** - `Institute of Environmental Science and Research|ror-id:https://ror.org/0405trq15`\
+**GNS Science** - `GNS Science|ror-id:https://ror.org/03vaqfv64`\
+**Manaaki Whenua Landcare Research** - `Manaaki Whenua – Landcare Research|ror-id:https://ror.org/02p9cyn66`\
+**NIWA** - `National Institute of Water and Atmospheric Research|ror-id:https://ror.org/04hxcaz34`\
+**Plant and Food Research** - `Plant & Food Research|ror-id:https://ror.org/02bchch95`\
+**PHF Science** - `New Zealand Institute for Public Health and Forensic Science|ror-id:https://ror.org/0405trq15`\
+**Scion** - `Scion|ror-id:https://ror.org/048r72142`  
+
+#### Funder  
+**Callaghan Innovation** - `Callaghan Innovation|ror-id:https://ror.org/02n25sf77`\
+**HRC** - `Health Research Council - Health Research Council of New Zealand|ror-id:https://ror.org/00zbf3d93`\
+**MBIE** - `Ministry of Business, Innovation and Employment|ror-id:https://ror.org/02jtq1b51`\
+**Royal Society** - `Royal Society Te Apārangi|ror-id:https://ror.org/04tajb587`  
+
+#### Other
+**Antarctica New Zealand** - `Antarctica New Zealand|ror-id:https://ror.org/0190e1q31`  
