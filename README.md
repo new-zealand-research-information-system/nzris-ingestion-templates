@@ -106,7 +106,10 @@ The users.csv template is used to collect information about individuals who are 
 **Column 13. - "Protected[Generic01]"**\
 **Column 14. - "ORCID[Generic02]"**\
 **Column 15. - "Organisation[Generic03]"**\
-**Column 16. - "JobTile[Generic04]"**  
+**Column 16. - "JobTitle[Generic04]"**
+**Column 17. - "AffiliationROR[Generic48]"**
+**Column 18. - "AffiliationGRID[Generic49]"**
+**Column 19. - "AffiliationNZBN[Generic50]"**
 
 ### [Provider ID_Dataset #]_publications.csv  
 The publications.csv template is used to capture information about published research outputs that result from grant funding. All columns are required.  
@@ -164,9 +167,7 @@ The collaborating-organisations.csv template is used to capture information abou
 **Column 8. - "state"**\
 **Column 9. - "zip-code"**\
 **Column 10. - "country"**\
-**Column 11. - "grid-id"**\
-**Column 12. - "ror-id"**\
-**Column 13. - "nzbn-id"**  
+**Column 11. - "identifiers"**\
 
 ### [Provider ID_Dataset #]_persons.csv  
 The persons.csv template is used to capture information about individuals who are indirectly associated with research funding, such as editors and co-authors. All columns are required.  
@@ -198,7 +199,7 @@ Organisations recorded by the Research Organisation Registry [ROR](https://ror.o
 **Column 7. - "aliases"**\
 **Column 8. - "acronyms"**\
 **Column 9. - "url"**\
-**Column 10. - "types"**\
+**Column 10. - "c-types"**\
 **Column 11. - "identifiers"**\
 **Column 12. - "established"**\
 **Column 13. - "c-disestablishment-date"**\
