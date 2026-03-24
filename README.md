@@ -106,9 +106,9 @@ The users.csv template is used to collect information about individuals who are 
 **Column 13. - "Protected[Generic01]"**\
 **Column 14. - "ORCID[Generic02]"**\
 **Column 15. - "Organisation[Generic03]"**\
-**Column 16. - "JobTitle[Generic04]"**
-**Column 17. - "AffiliationROR[Generic48]"**
-**Column 18. - "AffiliationGRID[Generic49]"**
+**Column 16. - "JobTitle[Generic04]"**\
+**Column 17. - "AffiliationROR[Generic48]"**\
+**Column 18. - "AffiliationGRID[Generic49]"**\
 **Column 19. - "AffiliationNZBN[Generic50]"**
 
 ### [Provider ID_Dataset #]_publications.csv  
@@ -167,7 +167,7 @@ The collaborating-organisations.csv template is used to capture information abou
 **Column 8. - "state"**\
 **Column 9. - "zip-code"**\
 **Column 10. - "country"**\
-**Column 11. - "identifiers"**\
+**Column 11. - "identifiers"**
 
 ### [Provider ID_Dataset #]_persons.csv  
 The persons.csv template is used to capture information about individuals who are indirectly associated with research funding, such as editors and co-authors. All columns are required.  
