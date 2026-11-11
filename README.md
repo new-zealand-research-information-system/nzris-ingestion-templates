@@ -2,7 +2,7 @@
 
 The NZRIS data ingestion process is designed to ensure the accurate and consistent integration of research-related data from providers into the NZRIS system. Data providers are required to prepare and format their data into a series of structured CSV files, each corresponding to a specific data domain. These include files containing information on users, grants and contracts, funds and funding rounds, publications, and relationships between categories. The submission process to ingest data into NZRIS requires the creation of multiple *.csv (comma separated value) files. These are:  
 
-* [[Provider ID_Dataset #]_grants.csv](#provider-id_dataset-_grantscsv)
+* [[Provider ID_Date]_grants_metadata_feed.csv]
 * [[Provider ID_Dataset #]_equipment.csv](#provider-id_dataset-_equipmentcsv)
 * [[Provider ID_Dataset #]_links.csv](#provider-id_dataset-_linkscsv)
 * [[Provider ID_Dataset #]_users.csv](#provider-id_dataset-_userscsv)
@@ -28,7 +28,7 @@ To ensure successful ingestion into the NZRIS system, data providers must struct
 
 ## Ingestion format
 
-### [Provider ID_Dataset #]_grants.csv
+### [Provider ID_Date]_grants_metadata_feed.csv
 
 The grants.csv file is used to collect and organise key information about grants, contracts, and payments. It captures details such as titles and descriptions, financial values, and important dates including award, start, and end dates.  All columns are required.
 
