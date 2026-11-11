@@ -2,19 +2,19 @@
 
 The NZRIS data ingestion process is designed to ensure the accurate and consistent integration of research-related data from providers into the NZRIS system. Data providers are required to prepare and format their data into a series of structured CSV files, each corresponding to a specific data domain. These include files containing information on users, grants and contracts, funds and funding rounds, publications, and relationships between categories. The submission process to ingest data into NZRIS requires the creation of multiple *.csv (comma separated value) files. These are:  
 
-* [[Provider ID_Date]_grants_metadata_feed.csv](#provider-id_date_grants_metadata_feedcsv)
-* [[Provider ID_Date]_equipment_metadata_feed.csv](#provider-id_date_equipment_metadata_feedcsv)
-* [[Provider ID_Date]_grants_links_feed.csv](#provider-id_date_grants_links_feedcsv)
-* [[Provider ID_Date]_user_feed.csv](#provider-id_date_user_feedcsv)
-* [[Provider ID_Date]_publications_metadata_feed.csv](#provider-id_date_publications_metadata_feedcsv)
-* [[Provider ID_Date]_grants_collaborating_organisations_feed.csv](#provider-id_date_grants_collaborating_organisations_metadata_feedcsv)
+* Grants Record Template - [[Provider ID_Date]_grants_metadata_feed.csv](#provider-id_date_grants_metadata_feedcsv)
+* Equipment Record Template - [[Provider ID_Date]_equipment_metadata_feed.csv](#provider-id_date_equipment_metadata_feedcsv)
+* Relationship (Links) Record Template - [[Provider ID_Date]_grants_links_feed.csv](#provider-id_date_grants_links_feedcsv)
+* User Record Template - [[Provider ID_Date]_user_feed.csv](#provider-id_date_user_feedcsv)
+* Publication Records Template - [[Provider ID_Date]_publications_metadata_feed.csv](#provider-id_date_publications_metadata_feedcsv)
+* Collaborating Organisation Records Template - [[Provider ID_Date]_grants_collaborating_organisations_feed.csv](#provider-id_date_grants_collaborating_organisations_metadata_feedcsv)
 
 
 **NOTE:** <ins>Not all files are required for every submission to NZRIS.</ins>  Although multiple *.csv files are available, the required files depend on the role of the organisation and the type of information being submitted.
 Ingestion templates for capturing organisations **not** listed in the [Research Organisation Registry - ROR](https://ror.org/) and Indirectly Associated Individuals are available in NZRIS; however, their use is expected to be infrequent and generally limited to situations where additional detail is required.  
 
-* [[Provider ID_Date]_publications_persons_feed.csv](#provider-id_date_publications_persons_feedcsv)
-* [[Provider ID_Date]_external_organisations_metadata_feed.csv](#provider-id_date_external_organisations_metadata_feedcsv)
+* Indirectly Associated People Record Template - [[Provider ID_Date]_publications_persons_feed.csv](#provider-id_date_publications_persons_feedcsv)
+* New Organisation Record Template - [[Provider ID_Date]_external_organisations_metadata_feed.csv](#provider-id_date_external_organisations_metadata_feedcsv)
  
 Detailed guidance on the required structure for each ingest template is provided in the [Data Specification and Data Dictionary](Data Specification and Data Dictionary v2_0.pdf), including mandatory columns by data type, the specific details needed within each column, and links to comprehensive field-level information.  
 
