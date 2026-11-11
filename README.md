@@ -22,7 +22,7 @@ To ensure successful ingestion into the NZRIS system, data providers must struct
 
 ## Ingestion format
 
-### [Provider ID_Date]_grants_metadata_feed.csv
+### Grants Record Template - [Provider ID_Date]_grants_metadata_feed.csv
 
 The Grants Record Template is used to collect and organise key information about grants, contracts, and payments. It captures details such as titles and descriptions, financial values, and important dates including award, start, and end dates.  All columns are required.
 
