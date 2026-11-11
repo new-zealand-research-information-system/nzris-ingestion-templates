@@ -53,7 +53,7 @@ The Grants Record Template is used to collect and organise key information about
 **Column 25.	- "constraints"**  
 **Column 26.	- "c-payment-reference"**  
   
-### [Provider ID_Date]_equipment_metadata_feed.csv
+### Equipment Record Template - [Provider ID_Date]_equipment_metadata_feed.csv
 The Equipment Record Template is used to gather key information about the ***funds and funding rounds*** associated with research investments and grants.  All columns are required.  
 
 **Column 1. - "id"**\
@@ -69,7 +69,7 @@ The Equipment Record Template is used to gather key information about the ***fun
 **Column 11. - "c-allocation-method"**\
 **Column 12. - "c-vote"**  
   
-### [Provider ID_Date]_grants_links_feed.csv  
+### Relationship (Links) Record Template - [Provider ID_Date]_grants_links_feed.csv  
 The Relationship (Links) Record Template is used to record relationships between different categories and record types within the metadata system.  All columns are required.  
 
 **Column 1. - "id-1"**\
@@ -81,7 +81,7 @@ The Relationship (Links) Record Template is used to record relationships between
 **Column 7. - "source-2"**\
 **Column 8. - "privacy-level"**  	
    
-### [Provider ID_Date]_user_feed.csv  
+### User Record Template - [Provider ID_Date]_user_feed.csv  
 The User Record Template is used to collect information about individuals who are directly associated with research funding, such as grant recipients, collaborators, and other key contributors.  Column headings must conform to the list below. All columns are required.    
 #### NOTE - unlike other ingest templates the column headings for Users require square brackets and initial caps.  
   
@@ -105,7 +105,7 @@ The User Record Template is used to collect information about individuals who ar
 **Column 18. - "AffiliationGRID[Generic49]"**\
 **Column 19. - "AffiliationNZBN[Generic50]"**
 
-### [Provider ID_Date]_publications_metadata_feed.csv  
+### Publication Records Template - [Provider ID_Date]_publications_metadata_feed.csv  
 The Publication Record Template is used to capture information about published research outputs that result from grant funding. All columns are required.  
 
 **Column 1. - "id"**\
@@ -147,7 +147,7 @@ The Publication Record Template is used to capture information about published r
 **Column 37. - "privacy"**\
 **Column 38. - "c-funding-source-reference"**  				
 
-### [Provider ID_Date]_grants_collaborating_organisations_feed.csv  
+### Collaborating Organisation Records Template - [Provider ID_Date]_grants_collaborating_organisations_feed.csv  
 The Collaborating Organisations Record Template is used to capture information about collaborating organisations that are directly involved in funded research activities. All columns are required.  
 #### When making amendments to the list of collaborating organisations for a specified grant, the entire updated list must be provided — not just the changes. This is because each time amended data is received, the existing data is completely overwritten.  
 
@@ -165,7 +165,7 @@ The Collaborating Organisations Record Template is used to capture information a
 **Column 12. - "ror-id"**\
 **Column 13. - "nzbn"**
 
-### [Provider ID_Date]_publications_persons_feed.csv  
+### Indirectly Associated People Record Template - [Provider ID_Date]_publications_persons_feed.csv  
 The Indirectly Associated People Record Template is used to capture information about individuals who are indirectly associated with research funding, such as editors and co-authors. All columns are required.  
 #### When making amendments to the list of indirectly associated individuals for a specified grant or publication, the entire updated list must be provided — not just the changes. This is because each time amended data is received, the existing data is completely overwritten.  
 
@@ -183,7 +183,7 @@ The Indirectly Associated People Record Template is used to capture information 
 **Column 12. - "country"**\
 **Column 13. - "zip-code"**  
 
-### [Provider ID_Date]_external_organisations_metadata_feed.csv  
+### New Organisation Record Template - [Provider ID_Date]_external_organisations_metadata_feed.csv  
 Organisations recorded by the Research Organisation Registry [ROR](https://ror.org/) - are automatically included in the NZRIS database.  For organisations without an ROR identifier use the New Organisation Record Template.  All columns are required.  
 
 **Column 1. - "id"**\
