@@ -11,10 +11,10 @@ The NZRIS data ingestion process is designed to ensure the accurate and consiste
 
 
 **NOTE:** <ins>Not all files are required for every submission to NZRIS.</ins>  Although multiple *.csv files are available, the required files depend on the role of the organisation and the type of information being submitted.
-Ingestion templates for capturing organisations **not** listed in the [Research Organisation Registry - ROR](https://ror.org/) and Indirectly Associated Individuals are available in NZRIS; however, their use is expected to be infrequent and generally limited to situations where additional detail is required.  \
+Ingestion templates for capturing organisations **not** listed in the [Research Organisation Registry - ROR](https://ror.org/) and Indirectly Associated Individuals are available in NZRIS; however, their use is expected to be infrequent and generally limited to situations where additional detail is required.  
 
-* [[Provider ID_Date]_publications_persons_feed.csv](#provider-id_date_publications_persons_feedcsv)\
-* [[Provider ID_Date]_external_organisations_metadata_feed.csv](#provider-id_date_external_organisations_metadata_feedcsv)\
+* [[Provider ID_Date]_publications_persons_feed.csv](#provider-id_date_publications_persons_feedcsv)
+* [[Provider ID_Date]_external_organisations_metadata_feed.csv](#provider-id_date_external_organisations_metadata_feedcsv)
  
 Detailed guidance on the required structure for each ingest template is provided in the [Data Specification and Data Dictionary](Data Specification and Data Dictionary v2_0.pdf), including mandatory columns by data type, the specific details needed within each column, and links to comprehensive field-level information.  
 
