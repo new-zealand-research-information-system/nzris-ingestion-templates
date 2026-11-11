@@ -16,7 +16,7 @@ Ingestion templates for capturing organisations **not** listed in the [Research 
 •	[Provider ID_Date]_publications_persons_feed.csv(#provider-id_date_publications_persons_feedcsv)  
 •	[Provider ID_Date]_external_organisations_metadata_feed.csv(#provider-id_date_external_organisations_metadata_feedcsv)  
 
-Detailed guidance on the required structure for each ingest template is provided in the [Data Specification and Data Dictionary](https://github.com/new-zealand-research-information-system/nzris-data-specifications/blob/master/Data%20Specification%20and%20Data%20Dictionary.pdf), including mandatory columns by data type, the specific details needed within each column, and links to comprehensive field-level information.  
+Detailed guidance on the required structure for each ingest template is provided in the [Data Specification and Data Dictionary](Data Specification and Data Dictionary v2_0.pdf), including mandatory columns by data type, the specific details needed within each column, and links to comprehensive field-level information.  
 
 To ensure successful ingestion into the NZRIS system, data providers must structure each .csv file using the exact column names and order specified in the following lists. The column headers in your file must match the field names provided – both in spelling and sequence – without modification. This consistency is critical for automated processing and validation. Where applicable, field-level notes and mapping references should be reviewed to confirm correct alignment with source data. This approach supports consistent formatting and ensures compatibility with NZRIS processing requirements.  
 
