@@ -30,12 +30,12 @@ To ensure successful ingestion into the NZRIS system, data providers must struct
 
 ### [Provider ID_Date]_grants_metadata_feed.csv
 
-The grants.csv file is used to collect and organise key information about grants, contracts, and payments. It captures details such as titles and descriptions, financial values, and important dates including award, start, and end dates.  All columns are required.
+The Grants Record Template is used to collect and organise key information about grants, contracts, and payments. It captures details such as titles and descriptions, financial values, and important dates including award, start, and end dates.  All columns are required.
 
 **Column 1. - "id"**  
 **Column 2. -	"type"**  
 **Column 3.	- "category"**  
-**Column 4.	- "c-protected"**  
+**Column 4.	- "privacy"**  
 **Column 5.	- "title"**  
 **Column 6. - "start-date"**  
 **Column 7.	- "end-date"**  
@@ -59,14 +59,14 @@ The grants.csv file is used to collect and organise key information about grants
 **Column 25.	- "constraints"**  
 **Column 26.	- "c-payment-reference"**  
   
-### [Provider ID_Dataset #]_equipment.csv
-The equipment.csv template is used to gather key information about the ***funds and funding rounds*** associated with research investments and grants.  All columns are required.  
+### [Provider ID_Date]_equipment_metadata_feed.csv
+The Equipment Record Template is used to gather key information about the ***funds and funding rounds*** associated with research investments and grants.  All columns are required.  
 
 **Column 1. - "id"**\
 **Column 2. - "type"**\
 **Column 3. - "category"**\
 **Column 4. - "name"**\
-**Column 5. - "c-protected"**\
+**Column 5. - "privacy"**\
 **Column 6. - "description"**\
 **Column 7. - "c-administering-organisation"**\
 **Column 8. - "start-date"**\
@@ -75,8 +75,8 @@ The equipment.csv template is used to gather key information about the ***funds 
 **Column 11. - "c-allocation-method"**\
 **Column 12. - "c-vote"**  
   
-### [Provider ID_Dataset #]_links.csv  
-The links.csv template is used to record relationships between different categories and record types within the metadata system.  All columns are required.  
+### [Provider ID_Date]_grants_links_feed.csv  
+The Relationship (Links) Record Template is used to record relationships between different categories and record types within the metadata system.  All columns are required.  
 
 **Column 1. - "id-1"**\
 **Column 2. - "category-1"**\
@@ -87,8 +87,8 @@ The links.csv template is used to record relationships between different categor
 **Column 7. - "source-2"**\
 **Column 8. - "privacy-level"**  	
    
-### [Provider ID_Dataset #]_users.csv  
-The users.csv template is used to collect information about individuals who are directly associated with research funding, such as grant recipients, collaborators, and other key contributors.  Column headings must conform to the list below. All columns are required.    
+### [Provider ID_Date]_user_feed.csv  
+The User Record Template is used to collect information about individuals who are directly associated with research funding, such as grant recipients, collaborators, and other key contributors.  Column headings must conform to the list below. All columns are required.    
 #### NOTE - unlike other ingest templates the column headings for Users require square brackets and initial caps.  
   
 **Column 1. - "[Title]"**\
@@ -103,7 +103,7 @@ The users.csv template is used to collect information about individuals who are 
 **Column 10. - "[Proprietary_ID]"**\
 **Column 11. - "[PrimaryGroupDescriptor]"**\
 **Column 12. - "[IsAcademic]"**\
-**Column 13. - "Protected[Generic01]"**\
+**Column 13. - "[IsPublic]"**\
 **Column 14. - "ORCID[Generic02]"**\
 **Column 15. - "Organisation[Generic03]"**\
 **Column 16. - "JobTitle[Generic04]"**\
@@ -111,8 +111,8 @@ The users.csv template is used to collect information about individuals who are 
 **Column 18. - "AffiliationGRID[Generic49]"**\
 **Column 19. - "AffiliationNZBN[Generic50]"**
 
-### [Provider ID_Dataset #]_publications.csv  
-The publications.csv template is used to capture information about published research outputs that result from grant funding. All columns are required.  
+### [Provider ID_Date]_publications_metadata_feed.csv  
+The Publication Record Template is used to capture information about published research outputs that result from grant funding. All columns are required.  
 
 **Column 1. - "id"**\
 **Column 2. - "type"**\
@@ -150,11 +150,11 @@ The publications.csv template is used to capture information about published res
 **Column 34. - "open-access-status"**\
 **Column 35. - "c-alternative-title"**\
 **Column 36. - "c-alternative-description"**\
-**Column 37. - "c-protected"**\
+**Column 37. - "privacy"**\
 **Column 38. - "c-funding-source-reference"**  				
 
-### [Provider ID_Dataset #]_collaborating-organisations.csv  
-The collaborating-organisations.csv template is used to capture information about collaborating organisations that are directly involved in funded research activities. All columns are required.  
+### [Provider ID_Date]_grants_collaborating_organisations_feed.csv  
+The Collaborating Organisations Record Template is used to capture information about collaborating organisations that are directly involved in funded research activities. All columns are required.  
 #### When making amendments to the list of collaborating organisations for a specified grant, the entire updated list must be provided — not just the changes. This is because each time amended data is received, the existing data is completely overwritten.  
 
 **Column 1. - "id"**\
@@ -167,10 +167,12 @@ The collaborating-organisations.csv template is used to capture information abou
 **Column 8. - "state"**\
 **Column 9. - "zip-code"**\
 **Column 10. - "country"**\
-**Column 11. - "identifiers"**
+**Column 11. - "grid-id"**\
+**Column 12. - "ror-id"**\
+**Column 13. - "nzbn"**
 
-### [Provider ID_Dataset #]_persons.csv  
-The persons.csv template is used to capture information about individuals who are indirectly associated with research funding, such as editors and co-authors. All columns are required.  
+### [Provider ID_Date]_publications_persons_feed.csv  
+The Indirectly Associated People Record Template is used to capture information about individuals who are indirectly associated with research funding, such as editors and co-authors. All columns are required.  
 #### When making amendments to the list of indirectly associated individuals for a specified grant or publication, the entire updated list must be provided — not just the changes. This is because each time amended data is received, the existing data is completely overwritten.  
 
 **Column 1. - "id"**\
@@ -187,8 +189,8 @@ The persons.csv template is used to capture information about individuals who ar
 **Column 12. - "country"**\
 **Column 13. - "zip-code"**  
 
-### [Provider ID_Dataset #]_organisations.csv  
-Organisations recorded by the Research Organisation Registry [ROR](https://ror.org/) - are automatically included in the NZRIS database.  For other organisations use this template.  All columns are required.  
+### [Provider ID_Date]_external_organisations_metadata_feed.csv  
+Organisations recorded by the Research Organisation Registry [ROR](https://ror.org/) - are automatically included in the NZRIS database.  For organisations without an ROR identifier use the New Organisation Record Template.  All columns are required.  
 
 **Column 1. - "id"**\
 **Column 2. - "type"**\
@@ -202,46 +204,9 @@ Organisations recorded by the Research Organisation Registry [ROR](https://ror.o
 **Column 10. - "c-types"**\
 **Column 11. - "identifiers"**\
 **Column 12. - "established"**\
-**Column 13. - "c-disestablishment-date"**\
+**Column 13. - "c-disestablished-date"**\
 **Column 14. - "parent-organisation-identifiers"**\
 **Column 15. - "child-organisation-identifiers"**\
 **Column 16. - "preceded-by-organisation-identifiers"**\
 **Column 17. - "succeeded-by-organisation-identifiers"**\
 **Column 18. - "related-organisation-identifiers"**  
-
-
-## Common organisations
-
-### Organisation Identifiers for Distributing and Recipient Organisations in _grants.csv Ingestion Template  
-The fields "funder" and "c-recipient-organisation" in the _grants.csv template require specific formatting of organisation detail to ensure correct record linkage.  Detailed information is provided in the Data Specification but a selection of these is provided below:  
-
-#### University / Education Provider / Wānanga  
-**Auckland University of Technology** - `Auckland University of Technology|ror-id:https://ror.org/01zvqw119`  
-**Lincoln University** - `Lincoln University|ror-id:https://ror.org/04ps1r162`\
-**Massey University** - `Massey University|ror-id:https://ror.org/052czxv31`\
-**Te Wānanga o Aotearoa** - `Te Wānanga o Aotearoa|ror-id:https://ror.org/02vcyrg44`\
-**University of Auckland** - `University of Auckland|ror-id:https://ror.org/03b94tp07`\
-**Univerity of Caterbury** - `University of Canterbury|ror-id:https://ror.org/03y7q9t39`\
-**University of Otago** - `University of Otago|ror-id:https://ror.org/01jmxt844`\
-**University of Waikato** - `University of Waikato|ror-id:https://ror.org/013fsnh78`\
-**Victoria University of Wellington** - `Victoria University of Wellington|ror-id:https://ror.org/0040r6f76`  
-
-#### Crown Research Institute (CRI) / Public Research Organisation (PRO)  
-**AgResesarch** - `AgResearch|ror-id:https://ror.org/0124gwh94`\
-**Cawthron Institute** - `Cawthron Institute|ror-id:https://ror.org/03sffqe64`\
-**ESR** - `Institute of Environmental Science and Research|ror-id:https://ror.org/0405trq15`\
-**GNS Science** - `GNS Science|ror-id:https://ror.org/03vaqfv64`\
-**Manaaki Whenua Landcare Research** - `Manaaki Whenua – Landcare Research|ror-id:https://ror.org/02p9cyn66`\
-**NIWA** - `National Institute of Water and Atmospheric Research|ror-id:https://ror.org/04hxcaz34`\
-**Plant and Food Research** - `Plant & Food Research|ror-id:https://ror.org/02bchch95`\
-**PHF Science** - `New Zealand Institute for Public Health and Forensic Science|ror-id:https://ror.org/0405trq15`\
-**Scion** - `Scion|ror-id:https://ror.org/048r72142`  
-
-#### Funder  
-**Callaghan Innovation** - `Callaghan Innovation|ror-id:https://ror.org/02n25sf77`\
-**HRC** - `Health Research Council - Health Research Council of New Zealand|ror-id:https://ror.org/00zbf3d93`\
-**MBIE** - `Ministry of Business, Innovation and Employment|ror-id:https://ror.org/02jtq1b51`\
-**Royal Society** - `Royal Society Te Apārangi|ror-id:https://ror.org/04tajb587`  
-
-#### Other
-**Antarctica New Zealand** - `Antarctica New Zealand|ror-id:https://ror.org/0190e1q31`  
