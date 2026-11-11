@@ -5,22 +5,16 @@ The NZRIS data ingestion process is designed to ensure the accurate and consiste
 * [[Provider ID_Date]_grants_metadata_feed.csv](#provider-id_date_grants_metadata_feedcsv)
 * [[Provider ID_Date]_equipment_metadata_feed.csv](#provider-id_date_equipment_metadata_feedcsv)
 * [[Provider ID_Date]_grants_links_feed.csv](#provider-id_date_grants_links_feedcsv)
-* [[Provider ID_Dataset #]_users.csv](#provider-id_dataset-_userscsv)
-* [[Provider ID_Dataset #]_publications.csv](#provider-id_dataset-_publicationscsv)
-* [[Provider ID_Dataset #]_collaborating-organisations.csv](#provider-id_dataset-_collaborating-organisationscsv)
+* [[Provider ID_Date]_user_feed.csv](#provider-id_date_user_feedcsv)
+* [[Provider ID_Date]_publications_metadata_feed.csv](#provider-id_date_publications_metadata_feedcsv)
+* [[Provider ID_Date]_grants_collaborating_organisations_feed.csv](#provider-id_date_grants_collaborating_organisations_metadata_feedcsv)
 
 
 **NOTE:** <ins>Not all files are required for every submission to NZRIS.</ins>  Although multiple *.csv files are available, the required files depend on the role of the organisation and the type of information being submitted.
 Ingestion templates for capturing organisations **not** listed in the [Research Organisation Registry - ROR](https://ror.org/) and Indirectly Associated Individuals are available in NZRIS; however, their use is expected to be infrequent and generally limited to situations where additional detail is required.  
 
-•	[Provider ID_Dataset #]_persons.csv  
-•	[Provider ID_Dataset #]_organisations.csv  
-
-To ensure consistency and traceability across datasets, all data files should be prefixed with the Data Provider ID followed by the dataset ingest number or ingest date, using the following format:   *ProviderID_Dataset#(or date)_grants.csv*  
-
-For example, if the provider ID is ROY and the dataset ingest number is 05 or submission date is 31/3/2026, the file names should be: ***ROY_05_Grants.csv or ROY_20260331_grants.csv***. This convention helps maintain clarity, supports version control, and simplifies identification of data sources during processing and analysis.  
-
-As noted above, data is supplied across multiple .csv files, each corresponding to a specific data type. The _grants.csv, _equipment.csv, and _publications.csv files contain the core descriptive information for each record – such as grant number, title, funding amount, fund name, and publication details – serving as the primary reference for understanding the record’s context. The _links.csv file is used to define relationships between records, enabling connections across entities and datasets. Information about individuals associated with funding is captured in both the _users.csv (intended for Directly Associated Individuals) and _persons.csv (intended for Indirectly Associated Individuals) files.  
+•	[Provider ID_Date]_publications_persons_feed.csv(#provider-id_date_publications_persons_feedcsv)  
+•	[Provider ID_Date]_external_organisations_metadata_feed.csv(#provider-id_date_external_organisations_metadata_feedcsv)  
 
 Detailed guidance on the required structure for each ingest template is provided in the [Data Specification and Data Dictionary](https://github.com/new-zealand-research-information-system/nzris-data-specifications/blob/master/Data%20Specification%20and%20Data%20Dictionary.pdf), including mandatory columns by data type, the specific details needed within each column, and links to comprehensive field-level information.  
 
